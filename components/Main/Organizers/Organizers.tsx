@@ -69,8 +69,8 @@ const Organizers = () => {
                     viewBox="0 0 500 100" 
                     preserveAspectRatio="none"
                 >
-                    <path d="M10,20 L490,15 L495,80 L15,85 L10,20 Z" fill="#e3ceb6" opacity="0.6"/>
-                    <path d="M20,25 L480,20 L485,75 L25,80 L20,25 Z" fill="#e3ceb6" opacity="0.4"/>
+                    <path d="M10,20 L490,15 L495,80 L15,85 L10,20 Z" fill="#91c3e7" opacity="0.6"/>
+                    <path d="M20,25 L480,20 L485,75 L25,80 L20,25 Z" fill="#91c3e7" opacity="0.4"/>
                 </svg>
             </p>
         </div>

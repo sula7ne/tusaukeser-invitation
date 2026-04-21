@@ -10,7 +10,7 @@
     text-align: center; 
     color: $text-color;
     // margin: 140px 0;
-    margin: clamp(50px, 25vw, 250px) 0;
+    margin: clamp(50px, 20vw, 200px) 0;
 
     .title {
         // font-size: 180px;
@@ -35,7 +35,7 @@
         align-items: center;
         justify-content: center;
         color: white;
-        background-color: $text-color;
+        background-color: #396681;
         width: 400px;
         height: 100px;
         // padding: 35px 45px;
@@ -51,20 +51,20 @@
         @keyframes buttonPulse {
             0% {
                 transform: scale(1);
-                box-shadow: 0 0 0 0 rgba($text-color, 0.4);
+                box-shadow: 0 0 0 0 rgba(#30576e, 0.4);
             }
             50% {
                 transform: scale(1.02);
-                box-shadow: 0 0 20px 10px rgba($text-color, 0);
+                box-shadow: 0 0 20px 10px rgba(#30576e, 0);
             }
             100% {
                 transform: scale(1);
-                box-shadow: 0 0 0 0 rgba($text-color, 0);
+                box-shadow: 0 0 0 0 rgba(#30576e, 0);
             }
         }
 
         &:hover {
-            background-color: $table-border-color;
+            background-color: #30576e;
             animation-play-state: paused;
         }
         &:active {

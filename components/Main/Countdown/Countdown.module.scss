@@ -1,12 +1,10 @@
 @use "@/assets/styles/variables" as *;
 
 .countdown {
-    padding: 0 clamp(5px, 3vw, 20px);
     width: 100%;
     margin: 0 auto;
     text-align: center;
     // margin-top: 200px;
-    margin-top: clamp(80px, 30vw, 300px);
     color: $text-color;
     display: flex;
     flex-direction: column;

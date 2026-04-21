@@ -10,5 +10,38 @@
         max-width: 1024px;
         width: 100%;
         overflow: hidden;
+
+        background-image: url('./../../assets/images/background.jpg');
+        background-size: contain;
+
+
+        .info, .countdown, .organizers {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+
+            img {
+                width: 40%;
+                height: auto;
+
+                &:last-child {
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+        }
+        .info {
+            margin-top: clamp(12px, 12vw, 100px);
+            padding: 0 clamp(5px, 3vw, 20px);
+        }
+        .countdown {
+            padding: 0 clamp(5px, 3vw, 20px);
+            margin-top: clamp(80px, 30vw, 300px);
+        }
+        .organizers {
+            padding: 0 clamp(5px, 3vw, 20px);
+            margin: clamp(50px, 20vw, 200px) 0;
+        }
     }
 }

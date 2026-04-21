@@ -1,5 +1,8 @@
 import { useLayoutEffect, useRef } from "react";
 
+import Image from "next/image";
+import cloud1Img from "@/assets/images/cloud1.webp";
+import cloud2Img from "@/assets/images/cloud2.png";
 import gsap from "gsap";
 import styles from "@/components/Main/Info/Info.module.scss";
 
@@ -35,7 +38,7 @@ const Info = () => {
     return (
         <div ref={containerRef} className={styles.info}>
             <h2 ref={titleRef} className={styles.title}>Құрметті қонақтар!</h2>
-            <p ref={textRef} className={styles.description}>Біз бұл күнді ерекше өткізгіміз келеді, сондықтан сіздерді үйлену тойымызды бізбен бірге тойлауға шақырамыз!</p>
+            <p ref={textRef} className={styles.description}>Сіздерді Нәдір ұлымыздың 1 жас тұсаукесер тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</p>
         </div>
     );
 }

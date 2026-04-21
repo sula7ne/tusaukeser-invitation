@@ -1,26 +1,28 @@
 import Image from "next/image";
-import coupleImg from "@/assets/images/baby.jpg";
+import babyImg from "@/assets/images/baby.png";
+import balloonImg from "@/assets/images/balloon.svg";
+import ropeImg from "@/assets/images/rope.webp";
 import styles from "@/components/Main/Banner/Banner.module.scss";
 
 const Banner = () => {
     return (
-        // <div className={styles.banner}>
-        //     <Image src={coupleImg} alt="Фото пары" />
-            
-        //     <div className={styles.text}>
-        //         <h1 className={styles.names}>
-        //             <span className={styles.name}>Нәдір</span>
-        //             <span className={styles.event}>Тұсау кесер</span>
-        //         </h1>
-        //         <p className={styles.date}>23/05</p>
-        //     </div>
-        // </div>
         <div className={styles.banner}>
-            <h2 className={styles.name}>Нәдір</h2>
+            <div className={styles.top}>
+                <Image src={ropeImg} alt="rope"/>
+            </div>
 
-            <Image src={coupleImg} alt="Фото" />
-            
-            <h2 className={styles.event}>Тұсау кесер</h2>
+            <div className={styles.center}>
+                <div className={styles.balloons}>
+                    <Image className={styles.balloon} src={balloonImg} alt="balloon" />
+                    <Image className={styles.balloon} src={balloonImg} alt="balloon" />
+                </div>
+                
+                <div className={styles.container}>
+                    <h2>Нәдір</h2>
+                    <Image src={babyImg} alt="Photo" />
+                    <h2>Тұсау кесер</h2>
+                </div>
+            </div>
         </div>
     );
 }

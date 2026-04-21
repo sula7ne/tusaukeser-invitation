@@ -7,7 +7,7 @@ import outlineImg from "@/assets/images/outline.svg";
 import styles from "@/components/Main/Date/Date.module.scss";
 
 const Date = () => {
-    const sectionRef = useRef<HTMLDivElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
     const tableRef = useRef<HTMLTableElement>(null);
     const outlineRef = useRef<HTMLImageElement>(null);
 
@@ -17,7 +17,7 @@ const Date = () => {
         const ctx = gsap.context(() => {
             const tl = gsap.timeline({
                 scrollTrigger: {
-                    trigger: sectionRef.current,
+                    trigger: containerRef.current,
                     start: "top 90%",
                     toggleActions: "play none none reverse",
                 }
@@ -45,13 +45,13 @@ const Date = () => {
                 },
                 "-=0.2"
             );
-        }, sectionRef);
+        }, containerRef);
 
         return () => ctx.revert();
     }, []);
     
     return (
-        <div ref={sectionRef} className={styles.date}>
+        <div ref={containerRef} className={styles.date}>
             <table ref={tableRef} className={styles.table}>
                 <thead>
                     <tr>
