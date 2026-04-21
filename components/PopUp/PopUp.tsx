@@ -1,5 +1,8 @@
 import { Dispatch, MouseEvent, SetStateAction, useEffect } from "react";
 
+import Image from "next/image";
+import babyNoImg from "@/assets/images/babyIntro.png";
+import babyYesImg from "@/assets/images/babyIntro.png";
 import styles from "@/components/PopUp/PopUp.module.scss"
 
 interface PopUpProps {
@@ -44,7 +47,8 @@ const PopUp = ({ setIsPopUp, isCome }: PopUpProps) => {
                 </button>
 
                 <div className={styles.content}>
-                    <svg width="50" height="50" fill="#62C584"> <path d="M25.1 49.28A24.64 24.64 0 0 1 .5 24.68 24.64 24.64 0 0 1 25.1.07a24.64 24.64 0 0 1 24.6 24.6 24.64 24.64 0 0 1-24.6 24.61zm0-47.45A22.87 22.87 0 0 0 2.26 24.68 22.87 22.87 0 0 0 25.1 47.52a22.87 22.87 0 0 0 22.84-22.84A22.87 22.87 0 0 0 25.1 1.83z"></path> <path d="M22.84 30.53l-4.44-4.45a.88.88 0 1 1 1.24-1.24l3.2 3.2 8.89-8.9a.88.88 0 1 1 1.25 1.26L22.84 30.53z"></path> </svg>
+                    {/* <svg width="50" height="50" fill="#62C584"> <path d="M25.1 49.28A24.64 24.64 0 0 1 .5 24.68 24.64 24.64 0 0 1 25.1.07a24.64 24.64 0 0 1 24.6 24.6 24.64 24.64 0 0 1-24.6 24.61zm0-47.45A22.87 22.87 0 0 0 2.26 24.68 22.87 22.87 0 0 0 25.1 47.52a22.87 22.87 0 0 0 22.84-22.84A22.87 22.87 0 0 0 25.1 1.83z"></path> <path d="M22.84 30.53l-4.44-4.45a.88.88 0 1 1 1.24-1.24l3.2 3.2 8.89-8.9a.88.88 0 1 1 1.25 1.26L22.84 30.53z"></path> </svg> */}
+                    <Image src={isCome ? babyYesImg : babyNoImg} alt="come" />
                     <h2>Рахмет! 💌</h2>
                     <p>Жауабыңыз жіберілді{isCome ? '. Сіздерді біздің тойымызда күтеміз!' : '!'}</p>
                 </div>

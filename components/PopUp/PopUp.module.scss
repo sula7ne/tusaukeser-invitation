@@ -38,6 +38,10 @@
             align-items: center;
             row-gap: 15px;
 
+            img {
+                width: 250px;
+                height: auto;
+            }
             h2 {
                 font-size: 22px;
             }
@@ -71,7 +75,6 @@
 
                 img {
                     width: 200px;
-                    height: 200px;
                 }
                 h2 {
                     font-size: 20px;
@@ -97,7 +100,6 @@
             .content {
                 img {
                     width: 180px;
-                    height: 180px;
                 }
                 h2 {
                     font-size: 18px;

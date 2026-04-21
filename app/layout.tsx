@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Нәдір тұсау кесер",
     description: "Сіздерді осы ерекше күнді бізбен бөлісуге шақырамыз!",
     openGraph: {
-        images: '/cover.jpeg',
+        images: '/cover.png',
     },
 };
 
