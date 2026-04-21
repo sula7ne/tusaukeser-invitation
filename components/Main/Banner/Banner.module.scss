@@ -29,11 +29,16 @@
         display: flex;
         flex-direction: column;
         
-        .balloons {
+        .imgs {
             width: 100%;
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
+            .step {
+                width: 20%;
+                height: auto;
+            }
             .balloon {
                 width: 30%;
                 height: auto;
