@@ -3,6 +3,7 @@ import { setIsIntro, setIsIntroOpening } from "@/state/slices/appSlice";
 import { useAppDispatch, useAppSelector } from "@/state/hooks";
 
 import Image from "next/image";
+import babyIntroImg from "@/assets/images/babyIntro.png";
 import clickImg from "@/assets/images/click.webp";
 import letterBottomImg from "@/assets/images/letter-bottom.webp";
 import letterTopImg from "@/assets/images/letter-top.webp";
@@ -39,7 +40,10 @@ const Intro = ({ audioRef }: IntroProps) => {
         <div className={`${styles.intro} ${isIntroOpening ? styles.opening : ""}`}>
             <div className={styles['letter-wrapper']}>
                 <div className={styles['letter-top']}>
-                    <h1 className={styles.title}>Тұсау кесер шақыру</h1>
+                    <div className={styles.container}>
+                        <Image className={styles.baby} src={babyIntroImg} alt="baby" />
+                        <h1 className={styles.title}>Тұсау кесер шақыру</h1>
+                    </div>
                     <Image src={letterTopImg} alt="Верхняя часть письма" className={styles.letter} />
                 </div>
 

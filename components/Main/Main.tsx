@@ -10,6 +10,7 @@ import Organizers from "./Organizers/Organizers";
 import { RefObject } from "react";
 import baby1Img from "@/assets/images/baby1.png"
 import baby2Img from "@/assets/images/baby2.png"
+import baby3Img from "@/assets/images/baby3.png"
 import cloud1Img from "@/assets/images/cloud1.webp";
 import cloud2Img from "@/assets/images/cloud2.png";
 import cloud4Img from "@/assets/images/cloud4.webp";
@@ -36,7 +37,11 @@ const Main = ({ audioRef }: MainProps) => {
                     <Image src={cloud2Img} alt="cloud" />
                 </div>
                 
-                <Date />
+                <div className={styles.date}>
+                    <Date />
+
+                    <h2>Басталуы 16:00-де</h2>
+                </div>
 
                 {/* <TimePath /> */}
 
@@ -56,7 +61,7 @@ const Main = ({ audioRef }: MainProps) => {
                     
                     <Organizers />
 
-                    <Image src={baby1Img} alt="baby" />
+                    <Image src={baby3Img} alt="baby" />
                 </div>
                 
                 <Form />

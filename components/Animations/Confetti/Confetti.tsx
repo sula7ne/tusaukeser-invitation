@@ -26,7 +26,7 @@ const Confetti = ({ audioRef }: ConfettiProps) => {
 
         if (isIntroOpening && canvasRef.current && audioRef.current) {
             myConfetti = confetti.create(canvasRef.current, { resize: true, useWorker: true });
-            const colors = ["#D4AF37", "#FFFFFF"];
+            const colors = ["#91b9cd", "#5d89a5", "#FFFFFF"];
 
             const AudioContextClass = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
             audioCtx = new AudioContextClass();

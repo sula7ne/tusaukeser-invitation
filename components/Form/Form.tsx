@@ -97,11 +97,11 @@ const Form = () => {
 
             <form ref={formRef} onSubmit={handleSubmit(onSubmit)}>
                 <div className={styles['form-el']}>
-                    <label htmlFor="name">Сіздің атыңыз бен тегіңіз</label>
+                    <label htmlFor="name">Сіздің аты-жөніңіз</label>
                     <input
                         id="name"
                         type="text"
-                        placeholder="Иван Иванов"
+                        placeholder="Қуат Нәдір"
                         {...register("name")}
                     />
                     {errors.name && <p className={styles.error}>{errors.name.message}</p>}
