@@ -19,7 +19,7 @@ const Banner = () => {
             <h2 className={styles.name}>Нәдір</h2>
 
             <Image src={coupleImg} alt="Фото" />
-        
+            
             <h2 className={styles.event}>Тұсау кесер</h2>
         </div>
     );

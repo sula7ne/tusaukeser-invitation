@@ -5,6 +5,7 @@ import Date from "./Date/Date";
 import Form from "@/components/Form/Form";
 import Info from "./Info/Info";
 import Location from "./Location/Location";
+import Organizers from "./Organizers/Organizers";
 import { RefObject } from "react";
 import TimePath from "./TimePath/TimePath";
 import styles from "@/components/Main/Main.module.scss"
@@ -31,6 +32,8 @@ const Main = ({ audioRef }: MainProps) => {
                 <Countdown />
 
                 <Location />
+
+                <Organizers />
                 
                 <Form />
             </div>
