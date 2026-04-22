@@ -1,3 +1,5 @@
+@use "@/assets/styles/variables" as *;
+
 .container {
     position: fixed;
     background-color: rgba(0, 0, 0, .8);
@@ -38,9 +40,35 @@
             align-items: center;
             row-gap: 15px;
 
-            img {
+            .img {
+                position: relative;
                 width: 250px;
-                height: auto;
+
+                .spinner {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+
+                    width: 100px;
+                    height: 100px;
+                    border: 7px solid $text-color;
+                    border-top: 10px solid transparent;
+                    border-radius: 50%;
+                    animation: spin 1s linear infinite;
+
+                    @keyframes spin {
+                        from {
+                            transform: translate(-50%, -50%) rotate(0deg);
+                        }
+                        to {
+                            transform: translate(-50%, -50%) rotate(360deg);
+                        }
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
             }
             h2 {
                 font-size: 22px;
@@ -73,7 +101,7 @@
             .content {
                 row-gap: 10px;
 
-                img {
+                .img {
                     width: 200px;
                 }
                 h2 {
@@ -98,7 +126,7 @@
             }
 
             .content {
-                img {
+                .img {
                     width: 180px;
                 }
                 h2 {
