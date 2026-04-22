@@ -34,10 +34,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
 
-            .step {
-                width: 20%;
+            .balloonYear {
+                width: 13%;
                 height: auto;
+                position: relative;
+                top: -40px;
             }
             .balloon {
                 width: 30%;
@@ -58,7 +61,7 @@
                 height: auto;
             }
             h2 {
-                font-size: clamp(20px, 10vw, 100px);
+                font-size: clamp(20px, 11vw, 110px);
                 font-family: 'caligraphic', Arial, sans-serif;
 
                 &:first-child {

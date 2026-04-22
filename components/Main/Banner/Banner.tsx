@@ -1,8 +1,8 @@
 import Image from "next/image";
 import babyImg from "@/assets/images/baby.png";
 import balloonImg from "@/assets/images/balloon.svg";
+import balloonYearImg from "@/assets/images/balloonYear.svg";
 import ropeImg from "@/assets/images/rope.webp";
-import stepImg from "@/assets/images/step.png";
 import styles from "@/components/Main/Banner/Banner.module.scss";
 
 const Banner = () => {
@@ -15,7 +15,7 @@ const Banner = () => {
             <div className={styles.center}>
                 <div className={styles.imgs}>
                     <Image className={styles.balloon} src={balloonImg} alt="balloon" />
-                    {/* <Image className={styles.step} src={stepImg} alt="step" />         */}
+                    <Image className={styles.balloonYear} src={balloonYearImg} alt="balloon 1 year" />        
                     <Image className={styles.balloon} src={balloonImg} alt="balloon" />
                 </div>
                 

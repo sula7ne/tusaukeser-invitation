@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import locationImg from "@/assets/images/location2.jpg";
+import locationImg from "@/assets/images/location.jpg";
 import styles from "@/components/Main/Location/Location.module.scss";
 
 const Location = () => {
