@@ -3,6 +3,7 @@ import { Dispatch, MouseEvent, SetStateAction, useEffect, useState } from "react
 import Image from "next/image";
 import babyNoImg from "@/assets/images/babyNo.webp";
 import babyYesImg from "@/assets/images/babyYes.webp";
+import stickersImg from "@/assets/images/stickers.jpg";
 import styles from "@/components/PopUp/PopUp.module.scss"
 
 interface PopUpProps {
@@ -61,7 +62,10 @@ const PopUp = ({ setIsPopUp, isCome }: PopUpProps) => {
                         />
                     </div>
                     <h2>Рахмет! 💌</h2>
-                    <p>Жауабыңыз жіберілді{isCome ? '. Сіздерді біздің тойымызда күтеміз!' : '!'}</p>
+                    <div className={styles.description}>
+                        <p>Жауабыңыз жіберілді{isCome ? '. Сіздерді біздің тойымызда күтеміз!' : '!'}</p>
+                        {isCome && <p>Cізге арналған шағын <a href={stickersImg.src} download="stickers.jpg">сыйлық</a> (басыңыз)</p>}
+                    </div>
                 </div>
             </div>
         </div>

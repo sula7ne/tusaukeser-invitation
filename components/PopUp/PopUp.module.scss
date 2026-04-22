@@ -73,6 +73,17 @@
             h2 {
                 font-size: 22px;
             }
+            .description {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+
+                p {
+                    a {
+                        color: #007AFF;
+                    }
+                }
+            }
         }
     }
 }
@@ -107,8 +118,10 @@
                 h2 {
                     font-size: 20px;
                 }
-                p {
-                    font-size: 14px;
+                .description {
+                    p {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -132,8 +145,10 @@
                 h2 {
                     font-size: 18px;
                 }
-                p {
-                    font-size: 12px;
+                .description {
+                    p {
+                        font-size: 12px;
+                    }
                 }
             }
         }
