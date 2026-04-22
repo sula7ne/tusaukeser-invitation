@@ -61,7 +61,7 @@ const PopUp = ({ setIsPopUp, isCome }: PopUpProps) => {
                             style={{ opacity: isImgLoading ? 0 : 1, transition: 'opacity 0.3s' }}
                         />
                     </div>
-                    <h2>Рахмет! 💌</h2>
+                    <h2>{isCome ? 'Рахмет' : 'Өте өкінішті'}! 💌</h2>
                     <div className={styles.description}>
                         <p>Жауабыңыз жіберілді{isCome ? '. Сіздерді біздің тойымызда күтеміз!' : '!'}</p>
                         {isCome && <p>Cізге арналған шағын <a href={stickersImg.src} download="stickers.jpg">сыйлық</a> (басыңыз)</p>}
