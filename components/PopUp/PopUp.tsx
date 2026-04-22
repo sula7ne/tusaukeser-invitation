@@ -1,8 +1,8 @@
 import { Dispatch, MouseEvent, SetStateAction, useEffect } from "react";
 
 import Image from "next/image";
-import babyNoImg from "@/assets/images/babyIntro.png";
-import babyYesImg from "@/assets/images/babyIntro.png";
+import babyNoImg from "@/assets/images/babyNo.png";
+import babyYesImg from "@/assets/images/babyYes.png";
 import styles from "@/components/PopUp/PopUp.module.scss"
 
 interface PopUpProps {
