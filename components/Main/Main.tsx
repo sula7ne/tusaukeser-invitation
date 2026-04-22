@@ -40,7 +40,7 @@ const Main = ({ audioRef }: MainProps) => {
                 <div className={styles.date}>
                     <Date />
 
-                    <h2>Басталуы 16:00-де</h2>
+                    <h2>Басталуы 14:00-де</h2>
                 </div>
 
                 {/* <TimePath /> */}
