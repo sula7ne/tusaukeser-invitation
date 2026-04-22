@@ -62,7 +62,7 @@ const Organizers = () => {
         <div ref={sectionRef} className={styles.organizers}>
             <h2 ref={titleRef} className={styles.title}>Той иелері:</h2>
             <p ref={namesRef} className={styles.names}>
-                Даулет & Салтанат
+                Дәулет & Салтанат
                 <svg 
                     ref={svgRef}
                     xmlns="http://www.w3.org/2000/svg" 
